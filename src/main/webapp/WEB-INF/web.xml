@@ -4,14 +4,15 @@
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
+  
   <servlet>
-    <description></description>
-    <display-name>FrontController</display-name>
     <servlet-name>FrontController</servlet-name>
     <servlet-class>com.revature.web.FrontController</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>FrontController</servlet-name>
-    <url-pattern>/FrontController</url-pattern>
+    <!-- This is how you map multiple URL patterns to one servlet -->
+    <url-pattern>/login</url-pattern>
+    <url-pattern>/employee</url-pattern>
   </servlet-mapping>
 </web-app>
